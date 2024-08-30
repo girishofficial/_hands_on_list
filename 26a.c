@@ -1,9 +1,10 @@
 //MT2024051
 //GIRISH KUMAR SAHU
 
-/* 
-#include Write a program to execute an executable program.
-a. use some executable program<stdio.h>*/
+/*26. Write a program to execute an executable program.
+a. use some executable program*/
+
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
