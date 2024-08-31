@@ -1,7 +1,11 @@
-/*GIRISH KUMAR SAHU*/
-/*MT2024051*/
-
-/*Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls*/
+/*
+============================================================================
+Name : 6.c
+Author : Girish Kumar Sahu
+Description : Write a program to take input from STDIN and display on STDOUT. Use only read/write system calls.
+Date: 17th Aug, 2024.
+============================================================================
+*/
 
 #include <unistd.h>
 

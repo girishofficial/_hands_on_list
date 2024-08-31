@@ -1,11 +1,15 @@
-/*Girish Kumar Sahu*/
-/*MT2024051*/
-
-/*Write a program to open a file, duplicate the file descriptor and append the file with both the
+/*
+============================================================================
+Name : 11.c
+Author : Girish Kumar Sahu
+Description : Write a program to open a file, duplicate the file descriptor and append the file with both the
 descriptors and check whether the file is updated properly or not.
 a. use dup
 b. use dup2
-c. use fcntl*/
+c. use fcntl
+Date: 17th Aug, 2024.
+============================================================================
+*/
 
 #include <stdio.h>
 #include <unistd.h>

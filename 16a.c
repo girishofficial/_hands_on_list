@@ -1,5 +1,6 @@
 //Girish Kumar Sahu
 //MT2024051
+/*23rd aug 2024*/
 
 /*16. Write a program to perform mandatory locking.
 a.implement write lock.*/

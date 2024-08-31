@@ -1,3 +1,13 @@
+/*GIRISH KUMAR SAHU*/
+/*MT2024051*/
+//24th Aug 2024
+/*18. Write a program to perform Record locking.
+a. Implement write lock
+b. Implement read lock
+Create three records in a file. Whenever you access a particular record, first lock it then modify/access
+to avoid race condition.*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>

@@ -1,5 +1,6 @@
 /*Girish Kumar Sahu*/
 /*MT2024051*/
+/*21 aug 2024*/
 
 /*Write a program to find out the opening mode of a file. Use fcntl.*/
 

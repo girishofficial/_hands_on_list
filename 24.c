@@ -1,6 +1,6 @@
 //MT2024051
 //Girish Kumar Sahu
-
+//27th aug 2024
 /*Write a program to create an orphan process.*/
 
 #include <stdlib.h>

@@ -1,6 +1,6 @@
 /*GIRISH KUMAR SAHU*/
 /*MT2024051*/
-
+//24th Aug 2024
 /*18. Write a program to perform Record locking.
 a. Implement write lock
 b. Implement read lock

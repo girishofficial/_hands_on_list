@@ -1,5 +1,6 @@
 /*Girish Kumar Sahu*/
 /*MT2024051*/
+/*21 aug 2024*/
 
 /*Write a program to find the type of a file.
 a. Input should be taken from command line.

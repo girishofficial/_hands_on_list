@@ -1,5 +1,6 @@
 //MT2024051
 //Girish Kumar Sahu
+//29th Aug 2024
 /*Write a program to get scheduling policy and modify the scheduling policy (SCHED_FIFO,
 SCHED_RR).*/
 

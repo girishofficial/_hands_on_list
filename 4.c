@@ -1,7 +1,11 @@
-/*GIRISH KUMAR SAHU*/
-/*MT2024051*/
-
-/*Write a program to open an existing file with read write mode. Try O_EXCL flag also.*/
+/*
+============================================================================
+Name : 4.c
+Author : Girish Kumar Sahu
+Description : Write a program to open an existing file with read write mode. Try O_EXCL flag also.
+Date: 16th Aug, 2024.
+============================================================================
+*/
 
 
 #include <stdio.h>

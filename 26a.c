@@ -1,6 +1,6 @@
 //MT2024051
 //GIRISH KUMAR SAHU
-
+//28th Aug 2024
 /*26. Write a program to execute an executable program.
 a. use some executable program*/
 
