@@ -1,40 +1,36 @@
-//Girish Kumar Sahu
-//MT2024051
-/*23rd aug 2024*/
-
-/*16. Write a program to perform mandatory locking.
-a.implement write lock.*/
+/*
+============================================================================
+Name : 16a.c
+Author : Girish Kumar Sahu
+Description : Write a program to perform mandatory locking.
+a. Implement write lock
+b. Implement read lock
+Date: 24th Aug, 2024.
+============================================================================
+*/
 
 
 #include<stdio.h>
-#include<sys/file.h>
+#include<unistd.h>
 #include<fcntl.h>
 #include<sys/types.h>
 #include<sys/stat.h>
-#include<stdlib.h>
-#include<unistd.h>
-int main(void){
-struct  flock lock;
-int fd,wr,rd;
-char buff[80];
- fd= open("foods",O_RDWR);
-lock.l_type=F_WRLCK;
-lock.l_whence=SEEK_SET;
-lock.l_start=0;
-lock.l_len=0;
-lock.l_pid=getpid();
-printf("before entering cs\n");
-//printf("inside cs\n");
 
-fcntl(fd,F_SETLKW,&lock);
-printf("inside cs\n");
-rd=read(0,buff,sizeof(buff));
-lseek(fd,1L,SEEK_END);
-wr=write(fd,buff,sizeof(buff));
-printf("press enter to exit cs\n");
-getchar();
-lock.l_type=F_UNLCK;
-fcntl(fd,F_SETLK,&lock);
-printf("exited cs\n");
-
+int main(int arg, char *args[]) {
+	int fd = open(args[1], O_WRONLY);
+	if (fd == -1) {
+		printf("Error While Opening File");
+		return 0;
+	}
+	struct flock lock = {F_WRLCK,0,0,0,0};
+	fcntl(fd, F_SETLKW, &lock);
+	printf("File is locked.\n press enter to unlock file\n");
+	getchar();
+	lock.l_type = F_UNLCK;
+	fcntl(fd, F_SETLKW, &lock);
+	return 0;
 }
+
+//Sample Output
+/*File is locked.
+press enter to unlock file*/

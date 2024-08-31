@@ -25,4 +25,15 @@ int main(){
 	while(1);
 }
 
-/*use & while running then do cd /proc/pid and then  cat /status*/
+/*use & while running then do cd /proc/pid/fd and then  ls -l*/
+//Sample Output 
+/*lrwx------ 1 girish-pc girish-pc 64 Aug 31 22:08 0 -> /dev/pts/1
+lrwx------ 1 girish-pc girish-pc 64 Aug 31 22:08 1 -> /dev/pts/1
+lrwx------ 1 girish-pc girish-pc 64 Aug 31 22:08 2 -> /dev/pts/1
+l-wx------ 1 girish-pc girish-pc 64 Aug 31 22:08 3 -> /home/girish-pc/hands_on/file1.txt
+l-wx------ 1 girish-pc girish-pc 64 Aug 31 22:08 4 -> /home/girish-pc/hands_on/file2.txt
+l-wx------ 1 girish-pc girish-pc 64 Aug 31 22:08 5 -> /home/girish-pc/hands_on/file3.txt
+l-wx------ 1 girish-pc girish-pc 64 Aug 31 22:08 6 -> /home/girish-pc/hands_on/file4.txt
+l-wx------ 1 girish-pc girish-pc 64 Aug 31 22:08 7 -> /home/girish-pc/hands_on/file5.txt
+*/
+

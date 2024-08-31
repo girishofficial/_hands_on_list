@@ -1,6 +1,6 @@
 /*
 ============================================================================
-Name : 17b.c
+Name : 17.c
 Author : Girish Kumar Sahu
 Description : Write a program to simulate online ticket reservation. Implement write lock
 Write a program to open a file, store a ticket number and exit. Write a separate program, to
@@ -10,10 +10,12 @@ Date: 24th Aug, 2024.
 ============================================================================
 */
 
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <stdlib.h>
 #include <fcntl.h>
 
 int main() {
@@ -43,3 +45,11 @@ int main() {
 	fcntl(fd, F_SETLK, &lock);
 	printf("finish\n");
 }
+
+
+//Sample Output 
+//before entering into critical section
+//Current ticket no: 2
+//enter to unlock
+//unlocked
+//finish

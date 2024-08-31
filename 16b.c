@@ -1,9 +1,14 @@
-//Girish Kumar Sahu
-//MT2024051
-/*23 aug 2024*/
-/*16. Write a program to perform mandatory locking.
+/*
+============================================================================
+Name : 16b.c
+Author : Girish Kumar Sahu
+Description : Write a program to perform mandatory locking.
 a. Implement write lock
-b. Implement read lock*/
+b. Implement read lock
+Date: 24th Aug, 2024.
+============================================================================
+*/
+
  
 
 
@@ -13,35 +18,20 @@ b. Implement read lock*/
 #include<sys/stat.h>
 #include<fcntl.h>
 #include<sys/types.h>
-int main(void)
-{struct flock lock;
-int w,fd,rd,wr;
-char buff[1024];
-fd=open("file1",O_RDWR);
-lock.l_type=F_RDLCK;
-lock.l_whence=SEEK_SET;
-lock.l_len=0;
-lock.l_pid=getpid();
-lock.l_start=0;
-printf("before entering cs\n");
-fcntl(fd,F_SETLKW,&lock);
-printf("inside cs\n");
-while(read (fd,buff,1))
-{
-        if(buff[0]=='\n')
-        getchar();
-        else 
-         w= write(0,buff,1);
-
-
-
+int main(int arg, char *args[]) {
+	int fd = open(args[1], O_RDONLY | O_CREAT, 0700);
+	if (fd == -1) {
+		printf("Error While accessing file");
+		return 0;
+	}
+	struct flock read_lock = {F_RDLCK,0,0,0,0};
+	fcntl(fd, F_SETLKW, &read_lock);
+	printf("File has read lock\n");
+	getchar();
+	read_lock.l_type = F_UNLCK;
+	fcntl(fd, F_SETLKW, &read_lock);
+	return 0;
 }
 
-//rd=read(fd,buff,1);
-//wr=write(0,buff,1);
-printf("press enter to exit  cs\n");
-getchar();
-lock.l_type=F_UNLCK;
-fcntl(fd,F_SETLK,&lock);
-printf("exit cs\n");
-}
+//Sample output
+//File has read lock

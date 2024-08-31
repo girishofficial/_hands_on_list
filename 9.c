@@ -38,3 +38,17 @@ int main(int argc, char* argv[]){
 	printf("Last modified time=%s",ctime(&(s.st_mtim).tv_sec));
 	printf("Last status change time=%s",ctime(&(s.st_ctim).tv_sec));
 }
+
+//Sample output
+/*1.txt 
+inode=3042342
+number of hardlink=1
+user id=1000
+group id=1000
+total size in bytes=0
+Block size of filesystem=4096
+Number of block=0
+Last access time=Sat Aug 31 22:19:10 2024
+Last modified time=Sat Aug 31 22:19:10 2024
+Last status change time=Sat Aug 31 22:19:10 2024
+*/

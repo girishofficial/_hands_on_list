@@ -1,7 +1,13 @@
-/*GIRISH KUMAR SAHU*/
-/*MT2024051*/
-//26th aug 2024
-/*Find out the priority of your running program. Modify the priority with nice command.*/
+/*
+============================================================================
+Name : 20.c
+Author : Girish Kumar Sahu
+Description : Find out the priority of your running program. Modify the priority with nice command.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+
+
 
 #include <stdio.h>
 #include <unistd.h>
@@ -23,8 +29,12 @@ int main(){
 
 	}
 
-	while(1) {
-	}
+	
 
 	return 0;
 }
+
+/*Sample Output
+Current Priority: 0
+New Priority after nice(15): 15
+ */

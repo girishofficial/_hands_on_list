@@ -69,3 +69,16 @@ int main() {
 
     return 0;
 }
+
+/*Sample Output
+Getting current scheduling policy...
+Current scheduling policy: SCHED_OTHER
+Setting scheduling policy to SCHED_FIFO...
+Scheduling policy changed successfully
+Getting updated scheduling policy...
+Current scheduling policy: SCHED_FIFO
+Setting scheduling policy to SCHED_RR...
+Scheduling policy changed successfully
+Getting updated scheduling policy...
+Current scheduling policy: SCHED_RR
+*/

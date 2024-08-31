@@ -1,10 +1,15 @@
-/*Girish Kumar Sahu*/
-/*MT2024051*/
-/*21 aug 2024*/
-
-/*Write a program to find the type of a file.
+/*
+============================================================================
+Name : 14.c
+Author : Girish Kumar Sahu
+Description : Write a program to find the type of a file.
 a. Input should be taken from command line.
-b. program should be able to identify any type of a file.*/
+b. program should be able to identify any type of a file.
+Date: 22nd Aug, 2024.
+============================================================================
+*/
+
+
 
 #include <stdio.h>
 #include <unistd.h>
@@ -44,3 +49,6 @@ default:
 }
 
 }
+
+//Sample Output
+//regular file

@@ -29,3 +29,10 @@ int main(){
 	printf("using fcntl:%d\n",fd3);
 
 }
+
+//Sample Output
+/*old file descriptor is 3
+before using dup2 fd is 4
+new file descriptor is 6
+using fcntl:5
+*/

@@ -1,7 +1,15 @@
-/*GIRISH KUMAR SAHU*/
-/*MT2024051*/
-//26th Aug 2024
-/*Write a program, call fork and print the parent and child process id.*/
+
+/*
+============================================================================
+Name : 21.c
+Author : Girish Kumar Sahu
+Description : Write a program, call fork and print the parent and child process id.
+Date: 29th Aug, 2024.
+============================================================================
+*/
+
+
+
 
 #include <stdio.h>
 #include <unistd.h>
@@ -21,3 +29,8 @@ int main(){
 
 	return 0;
 }
+
+//Sample Output
+/*Parent Process : PID = 8702, Child PID = 8702
+Child process : PID = 8703, Parent PID = 8703
+*/

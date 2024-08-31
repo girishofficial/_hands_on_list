@@ -22,3 +22,6 @@ int main() {
     close(fd);
     return 0;
 }
+
+//Sample output
+//fd : successful

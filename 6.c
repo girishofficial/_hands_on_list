@@ -16,3 +16,7 @@ int main(){
 	write(1,b,n);/* 1 to print on the screen */
 
 }
+
+//sample output 
+//hello World
+//hello World

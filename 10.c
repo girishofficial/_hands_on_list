@@ -27,3 +27,6 @@ int main(){
 	read(file1,chr,10);
 	write(1,chr,10);
 }
+
+//Sample output
+//Welcome to t

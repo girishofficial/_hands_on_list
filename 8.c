@@ -9,24 +9,25 @@ Date: 17th Aug, 2024.
 */
 
 #include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
 
-int main(int argc, char* argv[])
-{
-	FILE *file;
-	file = fopen(argv[1],"r");
-	if(file != NULL){
-	
-		char ch;
-		while((ch=fgetc(file)) != EOF){
-			putchar(ch);
-		}
-	fclose(file);
-	}
-	else{
-	printf("file error");
-	}
+int main(){
+    char buff[1024];
+    int fd = open("file1.txt", O_RDONLY);
 
-
-
-
+    while (read(fd,buff,1))
+    {
+        if(buff[0] == '\n')
+            getchar();
+        else
+        printf("%c",buff[0]);
+    }
+    close(fd);
+    
 }
+
+//Sample output
+//hello
+//line 1
+//line 2

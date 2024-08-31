@@ -1,7 +1,13 @@
-/*GIRISH KUMAR SAHU*/
-/*MT2024051*/
-//25th aug 2024
-/*Write a program to find out time taken to execute getpid system call. Use time stamp counter.*/
+/*
+============================================================================
+Name : 20.c
+Author : Girish Kumar Sahu
+Description : Write a program to find out time taken to execute getpid system call. Use time stamp counter.
+Date: 28th Aug, 2024.
+============================================================================
+*/
+
+
 
 #include <stdio.h>
 #include <unistd.h>  
@@ -27,4 +33,8 @@ int main() {
 
     return 0;
 }
+
+//Sample Output
+/*Time taken to execute getpid(): 10720 clock cycles
+Process ID: 8565*/
 

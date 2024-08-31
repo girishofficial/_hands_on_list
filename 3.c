@@ -22,3 +22,6 @@ printf("File Descriptor value: %d\n",fd);
 
 return 0;
 }
+
+//Sample output
+//File Descriptor value : 3

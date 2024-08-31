@@ -1,9 +1,11 @@
-//MT2024051
-//Girish Kumar Sahu
-//29th Aug 2024
-/*Write a program to get scheduling policy and modify the scheduling policy (SCHED_FIFO,
-SCHED_RR).*/
-
+/*
+============================================================================
+Name : 28b.c
+Author : Girish Kumar Sahu
+Description : Write a program to get maximum and minimum real time priority.
+Date: 30th Aug, 2024.
+============================================================================
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/stat.h>
@@ -21,3 +23,8 @@ int main(){
 
 	return 0;
 }
+
+/*Sample Output
+max vala Priority: 99
+min vala Priority: 1
+*/

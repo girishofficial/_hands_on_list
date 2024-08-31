@@ -1,9 +1,13 @@
-/*Girish Kumar Sahu*/
-/*MT2024051*/
-/*21 aug 2024*/
+/*
+============================================================================
+Name : 13.c
+Author : Girish Kumar Sahu
+Description : Write a program to wait for a STDIN for 10 seconds using select. Write a proper print statement to
+verify whether the data is available within 10 seconds or not (check in $man 2 select).
+Date: 22nd Aug, 2024.
+============================================================================
+*/
 
-/*Write a program to wait for a STDIN for 10 seconds using select. Write a proper print statement to
-verify whether the data is available within 10 seconds or not (check in $man 2 select).*/
 
 #include <stdio.h>
 #include <sys/select.h>
@@ -31,3 +35,6 @@ void main()
         printf("Data entered");
     }
 }
+
+//Sample Output
+//Data Entered.

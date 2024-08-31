@@ -1,7 +1,12 @@
-//MT2024051
-//Girish Kumar Sahu
-//30th Aug 2024
-/*30. Write a program to run a script at a specific time using a Daemon process.*/
+/*
+============================================================================
+Name : 30.c
+Author : Girish Kumar Sahu
+Description : Write a program to run a script at a specific time using a Daemon process.
+Date: 30th Aug, 2024.
+============================================================================
+*/
+
 
 #include<stdio.h>
 #include<unistd.h>
@@ -22,3 +27,6 @@ int main(){
 		exit(0);
 		}
 }
+
+/*Sample Output
+daemon is runnig*/

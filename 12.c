@@ -1,8 +1,13 @@
-/*Girish Kumar Sahu*/
-/*MT2024051*/
-/*21 aug 2024*/
+/*
+============================================================================
+Name : 12.c
+Author : Girish Kumar Sahu
+Description : Write a program to find out the opening mode of a file. Use fcntl.
+Date: 21 Aug, 2024.
+============================================================================
+*/
 
-/*Write a program to find out the opening mode of a file. Use fcntl.*/
+
 
 #include <stdio.h>
 #include <unistd.h>
@@ -30,3 +35,6 @@ switch(enquire){
 return 0;
 
 }
+
+//Sample Output
+//r

@@ -1,7 +1,11 @@
-/*MT2024051*/
-/*Girish Kumar Sahu*/
-//27th aug 2024
-/*23.Write a program to create a Zombie state of the running program.*/
+/*
+============================================================================
+Name : 23.c
+Author : Girish Kumar Sahu
+Description : Write a program to create a Zombie state of the running program.
+Date: 29th Aug, 2024.
+============================================================================
+*/
 
 
 #include <stdlib.h>
@@ -20,3 +24,4 @@ int main(){
 	return 0;
 }
 
+/*Sample Output*/

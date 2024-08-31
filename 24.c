@@ -1,7 +1,14 @@
-//MT2024051
-//Girish Kumar Sahu
-//27th aug 2024
-/*Write a program to create an orphan process.*/
+/*
+============================================================================
+Name : 24.c
+Author : Girish Kumar Sahu
+Description : Write a program to create an orphan process.
+a. use some executable program
+b. pass some input to an executable program. (for example execute an executable of $./a.out name)
+Date: 30th Aug, 2024.
+============================================================================
+*/
+
 
 #include <stdlib.h>
 #include <unistd.h>
@@ -29,4 +36,6 @@ int main(){
 	
 	return 0;
 }
-	
+
+/*Sample Output
+parent process is dead*/
