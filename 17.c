@@ -16,12 +16,7 @@ Date: 24th Aug, 2024.
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <stdlib.h>
-#include <fcntl.h>
+
 
 int main() {
 	struct {
